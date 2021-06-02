@@ -39,7 +39,7 @@ const MOTD =
     "8 8888        8 .8'       `8. `88888.    8 8888             8 8888       8 8888 ,8'         `         `8.`8888. \n";
 
 console.log(`%c${MOTD} `, 'font-family: Consolas;');
-console.log(`%cWe are hiring! See [Recruit]`, 'font-family: Consolas; filter: blur(4px)');
+console.log(`%cWE ARE HIRING! See ${origin}/media/Recruit.docx`, 'font-family: Consolas; filter: blur(4px)');
 
 // Main
 
