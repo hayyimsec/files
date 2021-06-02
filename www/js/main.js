@@ -43,7 +43,7 @@ console.log(`%cWE ARE HIRING! See ${origin}/media/Recruit.docx`, 'font-family: C
 
 // Main
 
-const BASE_URL = '/gh/hayyimsec/files@c364f46865596df45c51212b97b6452ad20ae91c/www/';
+const BASE_URL = '/gh/hayyimsec/files@db70055e3158536924d01728b9cb12f82e6cd5d7/www/';
 
 let deviceType = getDeviceType();
 
