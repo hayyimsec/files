@@ -43,6 +43,8 @@ console.log(`%cWE ARE HIRING! \ud83d\udc49 ${location.origin}/media/Recruit.docx
 
 // Main
 
+const BASE_URL = '/gh/hayyimsec/files/www/';
+
 let deviceType = getDeviceType();
 
 let slide_index = -1;
@@ -59,10 +61,10 @@ let slideLoop = null;
 
 function loadHTML() {
     return new Promise(async(resolve) => {
-        const locale_response = await fetch(`/locales/${locale}.json`);
+        const locale_response = await fetch(`${BASE_URL}/locales/${locale}.json`);
         const data = await locale_response.json();
 
-        const template_response = await fetch(`/templates/index.${deviceType}.html`);
+        const template_response = await fetch(`${BASE_URL}/templates/index.${deviceType}.html`);
         const html = await template_response.text();
 
         $('#page-content').html(Handlebars.compile(html)(Object.assign(data, { locale })));
