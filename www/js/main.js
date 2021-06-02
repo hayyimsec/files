@@ -43,7 +43,7 @@ console.log(`%cWE ARE HIRING! \ud83d\udc49 ${location.origin}/media/Recruit.docx
 
 // Main
 
-const BASE_URL = '/gh/hayyimsec/files/www/';
+const BASE_URL = '/gh/hayyimsec/files@master/www/';
 
 let deviceType = getDeviceType();
 
