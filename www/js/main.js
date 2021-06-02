@@ -39,11 +39,11 @@ const MOTD =
     "8 8888        8 .8'       `8. `88888.    8 8888             8 8888       8 8888 ,8'         `         `8.`8888. \n";
 
 console.log(`%c${MOTD} `, 'font-family: Consolas;');
-console.log(`%cWE ARE HIRING! \ud83d\udc49 ${location.origin}/media/Recruit.docx`, 'font-family: Consolas; filter: blur(4px)');
+console.log(`%cWe are hiring! See [Recruit]`, 'font-family: Consolas; filter: blur(4px)');
 
 // Main
 
-const BASE_URL = '/gh/hayyimsec/files@0c93873ee96fa0c25ded883eaba39c0cb404d165/www/';
+const BASE_URL = '/gh/hayyimsec/files@c364f46865596df45c51212b97b6452ad20ae91c/www/';
 
 let deviceType = getDeviceType();
 
