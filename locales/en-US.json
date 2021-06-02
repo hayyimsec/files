@@ -1,0 +1,89 @@
+{
+    "facebook": "Facebook",
+    "contact": "Contact",
+    "title": "Hayyim Security",
+    "sidebar": {
+        "modal": "sidebar_modal",
+        "menu": {
+            "blog": "blog",
+            "recruit": "recruit"
+        },
+        "location": "Office",
+        "location_info": "Vision-Tower 6F 312, Teheran-ro, Gangnam-gu",
+        "guide": "Guide",
+        "tel": "Tel",
+        "tel_info": "+82-02-567-2119",
+        "email": "E-mail",
+        "email_info": "hayyimsec@gmail.com",
+        "copyright": "Copyright",
+        "copyright_info": " <span>ⓒ</span> 2021 HayyimSecurity All Rights Reserved",
+        "how_to_go": "Our Office"
+    },
+    "intro": ["<span>하임 시큐리티</span>는<br> 세계와 함께하는<br> <strong>글로벌 보안 기업</strong>입니다", "보안 컨설팅을 통하여<br><strong>잠재적 위협</strong>을 제거하고<br> 데이터를 보호합니다"],
+    "services": [{
+        "title": "Research",
+        "content": "Research the latest technology studies and exploits<br>including operating systems and the browser vulnerabilities",
+        "modal": "service_modal_1",
+        "see_more": "See More"
+    }, {
+        "title": "Pentesting",
+        "content": "Proactively prevent possible damage<br>to customers' software through early discovery",
+        "modal": "service_modal_2",
+        "see_more": "See More"
+    }, {
+        "title": "Training",
+        "content": "Organizes and provides curricula on a variety of topics<br>including system security and penetration testing",
+        "modal": "service_modal_3",
+        "see_more": "See More"
+    }],
+    "modals": [{
+        "id": "service_modal_1",
+        "title": "Training",
+        "content": "<i>Hayyim Security analyzes and shares new technologies.</i><ul><li>Conference and lecture.</li><li>Knowledge sharing through seminars.</li><li>Publication of thesis and report on vulnerabilities.</li></ul>Each researchers exchanges their knowledges and develops through discussion and feedback. We conduct ongoing research for safe security.",
+        "control": true,
+        "large": false
+    }, {
+        "id": "service_modal_2",
+        "title": "Pentesting",
+        "content": "<i>Hayyim Security has a professional research team conducts security research.</i><ul><li>Exploration of security vulnerabilities in hardware and software.</li><li>Provides detailed analysis for patching vulnerabilities.</li><li>Exploit development.</li></ul>We strive to improve customer security through early detection and prevent further damage.",
+        "control": true,
+        "large": false
+    }, {
+        "id": "service_modal_3",
+        "title": "Training",
+        "content": "<i>Hayyim Security has accumulated know-how on vulnerability research.</i><ul><li>Training for Windows, Linux, Mac kernel vulnerability detection skills.</li><li>Training for Hardware vulnerability detection skills.</li><li>Training for Mobile vulnerability search technology training.</li></ul>We derive vulnerabilities through system analysis and prepare countermeasures to block possible security threats.",
+        "control": true,
+        "large": false
+    }, {
+        "id": "sidebar_modal",
+        "title": "Office",
+        "content": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2065502465316!2d127.04500189999999!3d37.5030463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca150ba31d21f%3A0xc20881fea937dab3!2sHayyim%20Security!5e0!3m2!1sen!2skr!4v1618969378434!5m2!1sen!2skr\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+        "control": false,
+        "large": true
+    }],
+    "posts": [{
+        "type": "news",
+        "date": "November 04, 2020",
+        "title": "국제 디지털 포렌식 경연대회 'DFC 2020' 성료 &middot;&middot;&middot; 대상은 noname팀",
+        "description": "한국정보보호학회 디지털포렌식연구회가 주최하고, 국가정보원이 후원하는 디지털 포렌식 경연대회 ‘DFC 2020’이 막을 내렸다.<br> 더불어 새로운 포렌식 분석방법을 제시하는 기술 공모도 함께 진행돼 눈길을 끌었다. 대상은 김앤장, 서울지방경찰청, 하임시큐리티, Theori 등의 구성원 4이 모인 ‘noname’ 팀이 수상했다.",
+        "link": "https://www.boannews.com/media/view.asp?idx=92339&kind=3",
+        "cover_image": "/images/2018-11-29.png",
+        "tags": ["antivirus", "browser"]
+    }, {
+        "type": "news",
+        "date": "November 29, 2018",
+        "title": "하임시큐리티, 해외 기업 컨설팅과 제로데이 보안취약점 연구에 집중 &middot;&middot;&middot; 해외사업도 확대",
+        "description": "하임시큐리티는 이스라엘 시메트리아, 미국 아티보, 중국 360 등과 국제적 파트너 관계를 유지하면서 해외 기업 컨설팅과 신제품 취약점 연구를 진행하고 있는 기업으로 성장했다.",
+        "link": "https://www.dailysecu.com/news/articleView.html?idxno=42251",
+        "cover_image": "/images/2020-11-04.png",
+        "tags": ["business"]
+    }, {
+        "type": "news",
+        "date": "November 30, 2017",
+        "title": "안랩 V3 버퍼오버플로우 취약점 찾은 박서빈 연구원, 버그바운티 상금 1만달러 획득",
+        "description": "지난 11월 9일부터 10일 양일간 열린 국제 해킹 보안 컨퍼런스 POC2017 버그바운티 대회인 제로페스트(Zer0Fest)에서 국내 대부분의 공공기관이 사용하고 있고 기업, 개인 등도 대표적으로&middot;&middot;&middot;",
+        "link": "https://www.dailysecu.com/news/articleView.html?idxno=26391",
+        "cover_image": "/images/2017-11-30.png",
+        "tags": ["antivirus"]
+    }]
+}

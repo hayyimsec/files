@@ -1,0 +1,89 @@
+{
+    "facebook": "페이스북",
+    "contact": "사업문의",
+    "title": "Hayyim Security",
+    "sidebar": {
+        "modal": "sidebar_modal",
+        "menu": {
+            "blog": "blog",
+            "recruit": "recruit"
+        },
+        "location": "<span style='letter-spacing: 1px; margin-right: 0px;'>회사주소</span>",
+        "location_info": "서울시 강남구 테헤란로 312, 비전 타워 6F",
+        "guide": "찾아오는길",
+        "tel": "<span style='letter-spacing: 6px; margin-right: -6px;'>연락처</span>",
+        "tel_info": "02-567-2119",
+        "email": "전자우편",
+        "email_info": "hayyimsec@gmail.com",
+        "copyright": "저작정보",
+        "copyright_info": " <span>ⓒ</span> 2021 HayyimSecurity All Rights Reserved",
+        "how_to_go": "찾아오는 길"
+    },
+    "intro": ["<span>하임 시큐리티</span>는<br> 세계와 함께하는<br> <strong>글로벌 보안 기업</strong>입니다", "보안 컨설팅을 통하여<br><strong>잠재적 위협</strong>을 제거하고<br> 데이터를 보호합니다"],
+    "services": [{
+        "title": "Research",
+        "content": "운영체제, 최신 브라우저 취약점 등의<br>최신기술연구 및 익스플로잇을 연구합니다",
+        "modal": "service_modal_1",
+        "see_more": "자세히 보기"
+    }, {
+        "title": "Pentesting",
+        "content": "조기 탐색을 통해 고객의 소프트웨어에서<br>발생할 수 있는 피해를 사전에 방지합니다",
+        "modal": "service_modal_2",
+        "see_more": "자세히 보기"
+    }, {
+        "title": "Training",
+        "content": "시스템 보안 및 침투 테스트 등<br>다양한 주제에 대한 교육과정을 구성·제공합니다",
+        "modal": "service_modal_3",
+        "see_more": "자세히 보기"
+    }],
+    "modals": [{
+        "id": "service_modal_1",
+        "title": "Training",
+        "content": "<i>하임시큐리티는 새로운 기술을 분석하고 공유합니다.</i><ul><li>컨퍼런스 및 강연</li><li>사내 세미나를 통한 지식 공유</li><li>논문 발표 및 취약점 제보</li></ul>각자가 연구한 내용을 교류하며 토의 및 피드백을 통해 발전합니다.\n안전한 보안을 위해 지속적인 연구를 수행합니다.",
+        "control": true,
+        "large": false
+    }, {
+        "id": "service_modal_2",
+        "title": "Pentesting",
+        "content": "<i>하임시큐리티는 보안 연구를 수행하는 전문 연구팀을 보유하고 있습니다.</i><ul><li>하드웨어 및 소프트웨어의 보안 취약점 탐색</li><li>취약점 패치를 위한 상세 분석 제공</li><li>익스플로잇 개발</li></ul>고객이 영향을 받을 수 있는 소프트웨어에 대한 패치를 수행하는 동안 추가 피해를 방지하고 조기 탐색을 통해 고객의 보안을 향상시키기 위해 노력합니다.",
+        "control": true,
+        "large": false
+    }, {
+        "id": "service_modal_3",
+        "title": "Training",
+        "content": "<i>하임시큐리티는 취약점 연구에 대한 축적된 노하우를 가지고 있습니다.</i><ul><li>Windows, Linux, Mac 커널 취약점 탐색 기술 교육</li><li>하드웨어 취약점 탐색 기술 교육</li><li>모바일 취약점 탐색 기술 교육</li></ul>시스템 분석을 통해 취약점을 도출하고, 발생할 수 있는 보안 위협을 차단하기 위한 대응책을 마련합니다.",
+        "control": true,
+        "large": false
+    }, {
+        "id": "sidebar_modal",
+        "title": "Office",
+        "content": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2065502465316!2d127.04500189999999!3d37.5030463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca150ba31d21f%3A0xc20881fea937dab3!2sHayyim%20Security!5e0!3m2!1sen!2skr!4v1618969378434!5m2!1sen!2skr\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+        "control": false,
+        "large": true
+    }],
+    "posts": [{
+        "type": "news",
+        "date": "2020년 11월 4일",
+        "title": "국제 디지털 포렌식 경연대회 'DFC 2020' 성료 &middot;&middot;&middot; 대상은 noname팀",
+        "description": "한국정보보호학회 디지털포렌식연구회가 주최하고, 국가정보원이 후원하는 디지털 포렌식 경연대회 ‘DFC 2020’이 막을 내렸다.<br> 더불어 새로운 포렌식 분석방법을 제시하는 기술 공모도 함께 진행돼 눈길을 끌었다. 대상은 김앤장, 서울지방경찰청, 하임시큐리티, Theori 등의 구성원 4이 모인 ‘noname’ 팀이 수상했다.",
+        "link": "https://www.boannews.com/media/view.asp?idx=92339&kind=3",
+        "cover_image": "/images/2018-11-29.png",
+        "tags": ["antivirus", "browser"]
+    }, {
+        "type": "news",
+        "date": "2018년 11월 29일",
+        "title": "하임시큐리티, 해외 기업 컨설팅과 제로데이 보안취약점 연구에 집중 &middot;&middot;&middot; 해외사업도 확대",
+        "description": "하임시큐리티는 이스라엘 시메트리아, 미국 아티보, 중국 360 등과 국제적 파트너 관계를 유지하면서 해외 기업 컨설팅과 신제품 취약점 연구를 진행하고 있는 기업으로 성장했다.",
+        "link": "https://www.dailysecu.com/news/articleView.html?idxno=42251",
+        "cover_image": "/images/2020-11-04.png",
+        "tags": ["business"]
+    }, {
+        "type": "news",
+        "date": "2017년 11월 30일",
+        "title": "안랩 V3 버퍼오버플로우 취약점 찾은 박서빈 연구원, 버그바운티 상금 1만달러 획득",
+        "description": "지난 11월 9일부터 10일 양일간 열린 국제 해킹 보안 컨퍼런스 POC2017 버그바운티 대회인 제로페스트(Zer0Fest)에서 국내 대부분의 공공기관이 사용하고 있고 기업, 개인 등도 대표적으로&middot;&middot;&middot;",
+        "link": "https://www.dailysecu.com/news/articleView.html?idxno=26391",
+        "cover_image": "/images/2017-11-30.png",
+        "tags": ["antivirus"]
+    }]
+}

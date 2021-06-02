@@ -1,0 +1,155 @@
+{{#each modals}}
+<div class="modal fade" id="{{ id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog {{#if large}}modal-lg {{/if}}modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    {{{ title }}}
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+            </div>
+            <div class="modal-body">
+                {{{ content }}}
+            </div>
+            {{#if control}}
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</div>
+{{/each}} {{#with sidebar}}
+<div class="mobile-sidebar mobile" id="mobile-sidebar">
+    <div class="sidebar-container">
+        <div class="line"></div>
+        <h1 class="first">
+            <a href="http://blog.hayyimsecurity.com/" target="_blank">
+                {{ menu.blog }}
+            </a>
+        </h1>
+        <h1>
+            <a href="/media/Recruit.docx" target="_blank" download>
+                {{ menu.recruit }}
+            </a>
+        </h1>
+        <div class="footer">
+            <p><b>Copyright {{{ copyright_info }}}</b></p>
+        </div>
+    </div>
+</div>
+{{/with}}
+<header id="header">
+    <a href="/">
+        <div class="logo"></div>
+    </a>
+    <ul></ul>
+    <div class="lang" id="lang-btn">
+        <a>
+            {{#ifeq locale "ko-KR"}}KOR{{/ifeq}}
+            {{#ifeq locale "en-US"}}ENG{{/ifeq}}
+        </a>
+        <div class="arrow"></div>
+        <div class="lang-select">
+            {{#ifneq locale "ko-KR"}}
+            <a href="javascript:setLocale('ko-KR')">
+                KOR
+            </a> {{/ifneq}} {{#ifneq locale "en-US"}}
+            <a href="javascript:setLocale('en-US')">
+                ENG
+            </a> {{/ifneq}}
+        </div>
+    </div>
+    <div class="mobile-menu-wrap mobile" id="mobile-menu-btn">
+        <div class="menu">
+            <i class="bar"></i>
+            <i class="bar"></i>
+            <i class="bar"></i>
+        </div>
+    </div>
+</header>
+<div class="main">
+    <div class="container">
+        <div class="presentation">
+            {{#each intro}}
+            <div class="intro">
+                <p class="content">
+                    {{{ this }}}
+                </p>
+            </div>
+            {{/each}}
+            <div class="page-guide">
+                <div class="subtitle">scroll down</div>
+                <div class="direction"></div>
+                <div class="direction"></div>
+                <div class="direction"></div>
+            </div>
+            <div class="corner-widget">
+                <a data-aos="zoom-in" class="aos-init aos-animate" href="mailto:hayyimsec@gmail.com" target="_blank">
+                    {{ contact }}
+                </a>
+                <a href="https://www.facebook.com/hayyimlab" target="_blank">
+                    {{ facebook }}
+                </a>
+            </div>
+        </div>
+        <div class="presentation mobile">
+            <div class="posts">
+                <div class="topbar"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {{#each posts}} {{#ifeq type "news"}}
+                        <div class="swiper-slide">
+                            <div class="news-article">
+                                <a href="{{ link }}" target="_blank">
+                                    <div class="cover-image">
+                                        <img src="{{ cover_image }}">
+                                    </div>
+                                    <div class="content-wrapper">
+                                        <div class="date">
+                                            {{ date }}
+                                        </div>
+                                        <div class="title">
+                                            {{{ title }}}
+                                        </div>
+                                        <div class="tags">
+                                            {{#each tags}}
+                                            <span class="tag">{{ . }}</span> {{/each}}
+                                        </div>
+                                        <div class="content">
+                                            {{{ description }}}
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        {{/ifeq}} {{#ifeq type "blog"}}
+                        <div class="swiper-slide">
+                            <div class="article">
+                                <div class="topic">
+                                    {{ category }}
+                                </div>
+                                <div class="title">
+                                    {{{ title }}}
+                                </div>
+                                <div class="content">
+                                    {{{ description }}}
+                                </div>
+                                <a target="_blank" href="{{ link }}" class="goto">
+                                    <div class="goto-fill"></div>
+                                    {{ see_more }}
+                                </a>
+                            </div>
+                        </div>
+                        {{/ifeq}} {{/each}}
+                    </div>
+                </div>
+                <div class="swiper-scrollbar" id="swiper-scrollbar-mobile">
+                    <div class="swiper-scrollbar-drag"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

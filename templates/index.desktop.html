@@ -1,0 +1,210 @@
+{{#each modals}}
+<div class="modal fade" id="{{ id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog {{#if large}}modal-lg {{/if}}modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    {{{ title }}}
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                {{{ content }}}
+            </div>
+            {{#if control}}
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</div>
+{{/each}} {{#with sidebar}}
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-leftpane"></div>
+    <div class="sidebar-container">
+        <div class="menu-wrap"></div>
+        <h1 class="first">
+            <a href="http://blog.hayyimsecurity.com/" target="_blank">
+                {{ menu.blog }}
+            </a>
+        </h1>
+        <h1>
+            <a href="/media/Recruit.docx" target="_blank" download>
+                {{ menu.recruit }}
+            </a>
+        </h1>
+        <div class="footer">
+            <p><b>{{{ location }}} <a data-toggle="modal" data-target="#{{ modal }}"><i class="fas fa-external-link-alt"></i></a></b> {{{ location_info }}}
+            </p>
+            <p><b>{{{ tel }}}</b> {{ tel_info }}</p>
+            <p><b>{{ email }} </b> {{ email_info }}
+            </p>
+            <p><b>{{{ copyright }}}</b> Copyright {{{ copyright_info }}}
+            </p>
+        </div>
+    </div>
+</div>
+{{/with}}
+<header id="header">
+    <a href="/">
+        <div class="logo"></div>
+    </a>
+    <ul>
+    </ul>
+    <div class="lang" id="lang-btn">
+        <a>
+            {{#ifeq locale "ko-KR"}}KOR{{/ifeq}}
+            {{#ifeq locale "en-US"}}ENG{{/ifeq}}
+        </a>
+        <div class="arrow"></div>
+        <div class="lang-select">
+            {{#ifneq locale "ko-KR"}}
+            <a href="javascript:setLocale('ko-KR')">
+                KOR
+            </a> {{/ifneq}} {{#ifneq locale "en-US"}}
+            <a href="javascript:setLocale('en-US')">
+                ENG
+            </a> {{/ifneq}}
+        </div>
+    </div>
+    <div class="menu-wrap desktop" id="menu-btn">
+        <div class="menu">
+            <i class="bar"></i>
+            <i class="bar"></i>
+            <i class="bar"></i>
+        </div>
+    </div>
+</header>
+<div class="main">
+    <div class="container">
+        <div class="presentation">
+            {{#each intro}}
+            <div class="intro">
+                <p class="content">
+                    {{{ this }}}
+                </p>
+            </div>
+            {{/each}}
+            <div class="page-guide">
+                <div class="subtitle">scroll down</div>
+                <div class="direction"></div>
+                <div class="direction"></div>
+                <div class="direction"></div>
+            </div>
+            <div class="corner-widget">
+                <a data-aos="zoom-in" class="aos-init aos-animate" href="mailto:hayyimsec@gmail.com" target="_blank">
+                    {{ contact }}
+                </a>
+                <a href="https://www.facebook.com/hayyimlab" target="_blank">
+                    {{ facebook }}
+                </a>
+            </div>
+        </div>
+        <div class="presentation narrow">
+            <div class="services">
+                <div class="swiper-container" id="mobile-service-slide">
+                    <div class="swiper-wrapper">
+                        {{#each services}}
+                        <div class="card swiper-slide">
+                            <div class="inner">
+                                <div class="title">
+                                    {{ title }}
+                                </div>
+                                <div class="content">
+                                    {{{ content }}}
+                                </div>
+                                <div class="goto-wrapper">
+                                    <a href="#" class="goto" data-toggle="modal" data-target="#{{ modal }}">
+                                        {{ see_more }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div class="presentation desktop wide">
+            <div class="services">
+                {{#each services}}
+                <div class="card">
+                    <div class="inner">
+                        <div class="title">
+                            {{{ title }}}
+                        </div>
+                        <div class="content">
+                            {{{ content }}}
+                        </div>
+                        <div class="goto-wrapper">
+                            <a href="#" class="goto" data-toggle="modal" data-target="#{{ modal }}">
+                                {{ see_more }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="presentation desktop">
+            <div class="posts">
+                <div class="category">
+                    <div class="name">Posts</div>
+                    <div class="separator"></div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {{#each posts}} {{#ifeq type "news"}}
+                        <div class="swiper-slide">
+                            <div class="news-article">
+                                <a href="{{ link }}" target="_blank">
+                                    <div class="cover-image">
+                                        <img src="{{ cover_image }}">
+                                    </div>
+                                    <div class="content-wrapper">
+                                        <div class="date">
+                                            {{ date }}
+                                        </div>
+                                        <div class="title">
+                                            {{{ title }}}
+                                        </div>
+                                        <div class="content">
+                                            {{{ description }}}
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        {{/ifeq}} {{#ifeq type "blog"}}
+                        <div class="swiper-slide">
+                            <div class="article">
+                                <div class="topic">
+                                    {{ category }}
+                                </div>
+                                <div class="title">
+                                    {{{ title }}}
+                                </div>
+                                <div class="content">
+                                    {{{ description }}}
+                                </div>
+                                <a target="_blank" href="{{ link }}" class="goto">
+                                    <div class="goto-fill"></div>
+                                    {{ see_more }}
+                                </a>
+                            </div>
+                        </div>
+                        {{/ifeq}} {{/each}}
+                    </div>
+                </div>
+                <div class="swiper-scrollbar" id="swiper-scrollbar-desktop">
+                    <div class="swiper-scrollbar-drag"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
